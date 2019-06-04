@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Login here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script type="text/javascript">
+function submitForm(){
+		var userName = document.getElementById('userName').value;
+		var pwd = document.getElementById('uPassword').value;
+		alert("data :: "+userName +""+pwd);
+}
+</script>
+
+</head>
+<body>
+<!-- NAVBAR Starts -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	<a class="navbar-brand" href="main_page\login">Welcome to the Login Page</a>
+  	<div class="navbar" id="navbarSupportedContent">
+  		<ul class="navbar-nav mr-auto">
+  			<li class="nav-item active">
+  				<a class="nav-link" href="#">Home</a>
+  			</li>
+  			<li class="nav-item active">
+       	 		<a class="nav-link" href="..\signup">Want to Sign-up instead? <span class="sr-only">(current)</span></a>
+    		</li>
+  		</ul>
+  	</div>
+</nav>
+
+<!-- NAVBAR ENDS -->
+<!-- Jumbotron for login -->
+<div class="container">
+		<div class="jumbotron">
+			<div class="container">
+				<h1 class="display-4">Hello user!</h1>
+				<p class="lead">Please input your details to login.</p>
+				<hr class="my-4"> <!-- Horizontal Line -->
+				<form action="post" name="loginForm">
+					<div class="container"> 
+					<!-- Username -->
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon1">@</span>
+						</div>
+						<input id="userName" name="username" required maxlength=200 type="text" class="form-control" placeholder="Username" 
+						aria-label="Username" aria-describedby="basic-addon1">
+					</div>
+					<!-- Password -->
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text" id="basic-addon2">***</span>
+						</div>
+						<input type="password" id="uPassword" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2">
+					</div>
+					<a href="..\signup">A new user? Signup here</a> <br>
+					<input class="btn btn-info" type="submit" value="Login" formmethod="post">
+					</div>
+				</form>	
+			</div>
+		</div>
+</div>
+
+<div class="sticky-bottom">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">Created by Bismoy Sutar</a>
+	</nav>
+</div>
+</body>
+</html>
